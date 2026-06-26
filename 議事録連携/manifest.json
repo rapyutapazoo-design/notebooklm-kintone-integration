@@ -1,0 +1,28 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "name": {
+    "ja": "NotebookLM ランチャー（議事録連携）",
+    "en": "NotebookLM Launcher"
+  },
+  "description": {
+    "ja": "一覧画面に、NotebookLM へ飛ぶボタン付きカードを表示します。タイトルとURLは設定画面で複数登録できます。",
+    "en": "Shows cards with buttons linking to NotebookLM on the record list view."
+  },
+  "icon": "image/icon.png",
+  "desktop": {
+    "js": ["js/notebook-cards.js"],
+    "css": ["css/style.css"]
+  },
+  "mobile": {
+    "js": ["js/notebook-cards.js"],
+    "css": ["css/style.css"]
+  },
+  "config": {
+    "html": "html/config.html",
+    "js": ["js/config.js"],
+    "css": ["css/config.css"],
+    "required_params": []
+  }
+}

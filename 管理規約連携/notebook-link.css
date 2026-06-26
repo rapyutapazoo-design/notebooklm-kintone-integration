@@ -1,0 +1,97 @@
+/* NotebookLM 連携 ボタン・カードスタイル */
+
+/* ==========================================
+   Card List（PC / モバイル 共通の一覧カードUI）
+   ========================================== */
+.notebook-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.notebook-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.notebook-card-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* ==========================================
+   Button
+   ========================================== */
+.notebook-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 9999px; /* pill shape */
+  background: linear-gradient(90deg, #4285F4, #9C27B0); /* Google Blue → Purple */
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Google Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.notebook-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Inactive state (URL 未登録) */
+.notebook-btn-inactive {
+  background: #E0E0E0;
+  color: #9E9E9E;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+/* Icon — インライン SVG (sparkle)。mask + currentColor でボタン文字色に追従。 */
+.notebook-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.5l2.2 8.3 8.3 2.2-8.3 2.2-2.2 8.3-2.2-8.3-8.3-2.2 8.3-2.2z'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.5l2.2 8.3 8.3 2.2-8.3 2.2-2.2 8.3-2.2-8.3-8.3-2.2 8.3-2.2z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* List（カード内）ボタンの調整 */
+.notebook-cell-btn {
+  margin: 0;
+}
+
+/* Detail View ヘッダー調整（PC） */
+.notebook-header-btn {
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+/* Detail View 調整（モバイル） */
+.notebook-mobile-detail {
+  margin-top: 10px;
+  text-align: left;
+}

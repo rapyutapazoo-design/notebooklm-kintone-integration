@@ -1,0 +1,11 @@
+# kintone プラグインの秘密鍵（絶対にコミットしない）
+*.ppk
+
+# ビルド成果物（再生成可能）
+plugin.zip
+議事録連携/plugin.zip
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+*.swp

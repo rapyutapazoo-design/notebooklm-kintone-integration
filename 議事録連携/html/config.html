@@ -1,0 +1,34 @@
+<section class="settings">
+  <h2 class="settings-heading">NotebookLM カード設定</h2>
+  <p class="kintoneplugin-desc">
+    一覧画面に表示するカードを設定します。タイトルと NotebookLM の URL を入力してください。<br>
+    「＋カードを追加」で複数登録できます（既定は1件）。
+  </p>
+
+  <div id="card-rows"></div>
+
+  <button type="button" id="add-row" class="kintoneplugin-button-add-row-image">＋カードを追加</button>
+
+  <div class="settings-actions">
+    <button type="button" id="save" class="kintoneplugin-button-dialog-ok">保存</button>
+    <button type="button" id="cancel" class="kintoneplugin-button-dialog-cancel">キャンセル</button>
+  </div>
+
+  <template id="row-template">
+    <div class="card-row">
+      <div class="card-row-fields">
+        <label class="card-row-label">
+          <span class="card-row-label-text">タイトル</span>
+          <input type="text" class="kintoneplugin-input-text row-title"
+                 placeholder="例: 2026年6月度 定例議事録">
+        </label>
+        <label class="card-row-label">
+          <span class="card-row-label-text">NotebookLM URL</span>
+          <input type="url" class="kintoneplugin-input-text row-url"
+                 placeholder="https://notebooklm.google.com/...">
+        </label>
+      </div>
+      <button type="button" class="kintoneplugin-button-remove-row-image row-remove" title="この行を削除">削除</button>
+    </div>
+  </template>
+</section>

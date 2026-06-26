@@ -1,0 +1,68 @@
+/* 設定画面スタイル */
+.settings {
+  padding: 24px;
+  max-width: 720px;
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  color: #333;
+}
+
+.settings-heading {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.kintoneplugin-desc {
+  margin: 0 0 20px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.card-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #e3e7e8;
+  border-radius: 8px;
+  background: #f7f9fa;
+}
+
+.card-row-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.card-row-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-row-label-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+}
+
+.card-row .kintoneplugin-input-text {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+}
+
+.row-remove {
+  flex-shrink: 0;
+}
+
+#add-row {
+  margin: 4px 0 24px;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
