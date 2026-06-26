@@ -1,4 +1,4 @@
-# NotebookLM ランチャー（議事録連携プラグイン）
+# NotebookLM 連携 — プラグイン版（NotebookLM ランチャー）
 
 kintone の一覧画面に、**NotebookLM へ飛ぶボタン付きカード**を表示する kintone プラグインです。
 
@@ -11,7 +11,7 @@ kintone の一覧画面に、**NotebookLM へ飛ぶボタン付きカード**を
 ## ディレクトリ構成
 
 ```
-議事録連携/
+プラグイン連携/
 ├── manifest.json          … プラグイン定義
 ├── html/
 │   └── config.html        … 設定画面
@@ -35,12 +35,12 @@ kintone へ読み込むには `.zip` 形式にパッケージングします。N
 # 親ディレクトリ（NotebookLM連携/）で実行
 
 # 初回（秘密鍵を自動生成）
-npx @kintone/plugin-packer ./議事録連携 --out ./議事録連携/plugin.zip
+npx @kintone/plugin-packer ./プラグイン連携 --out ./プラグイン連携/plugin.zip
 
 # 2回目以降（初回に生成された鍵を指定して更新版を作る）
-npx @kintone/plugin-packer ./議事録連携 \
-  --ppk ./議事録連携/aihedlomdgnddicaakbbemjcabmgnpnn.ppk \
-  --out ./議事録連携/plugin.zip
+npx @kintone/plugin-packer ./プラグイン連携 \
+  --ppk ./プラグイン連携/aihedlomdgnddicaakbbemjcabmgnpnn.ppk \
+  --out ./プラグイン連携/plugin.zip
 ```
 
 - 初回実行で、プラグインID名の秘密鍵
